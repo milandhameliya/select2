@@ -27,7 +27,7 @@ define([
         this.each(function () {
           var instance = $(this).data('select2');
 
-          if (instance == null) {
+          if (instance == null || !instance[options]) {
             return null;
           }
 
